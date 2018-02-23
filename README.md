@@ -2,4 +2,4 @@
 
 > Our lord and savior; our protector; our Keeper of the House Menethil.
 
-Oh wait -- hes just a bot.
+Oh wait -- he's just a bot.
