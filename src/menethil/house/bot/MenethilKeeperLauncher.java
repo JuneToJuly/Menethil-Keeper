@@ -1,11 +1,13 @@
 package menethil.house.bot;
 
+import menethil.house.util.HiddenData;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.OnlineStatus;
 
 import javax.security.auth.login.LoginException;
+import java.io.*;
 
 public class MenethilKeeperLauncher
 {
@@ -16,7 +18,8 @@ public class MenethilKeeperLauncher
     {
         JDABuilder builder = new JDABuilder(AccountType.BOT);
         builder.setStatus(OnlineStatus.ONLINE);
-        builder.setToken(TOKEN);
+        builder.setToken(HiddenData.getToken());
+        builder.addEventListener(new AlmightyEventListener());
 
         try
         {
@@ -29,4 +32,5 @@ public class MenethilKeeperLauncher
             e.printStackTrace();
         }
     }
+
 }
