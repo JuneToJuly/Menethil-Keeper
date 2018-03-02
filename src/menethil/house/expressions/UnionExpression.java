@@ -1,10 +1,12 @@
 package menethil.house.expressions;
 
+import java.util.List;
+
 public class UnionExpression extends MultiExpression
 {
-    public UnionExpression(Expression... expressionsToUnion)
+    public UnionExpression(List<Expression> multiExpression)
     {
-        super(expressionsToUnion);
+        super(multiExpression);
     }
 
     /**

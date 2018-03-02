@@ -8,9 +8,9 @@ abstract class MultiExpression implements Expression
 {
     protected List<Expression> expressionList;
 
-    public MultiExpression(Expression... expressionsToUnion)
+    public MultiExpression(List<Expression> multiExpression)
     {
-        expressionList = new ArrayList<>(Arrays.asList(expressionsToUnion));
+        expressionList = new ArrayList<>(multiExpression);
     }
 
 }

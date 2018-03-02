@@ -9,9 +9,9 @@ import java.util.List;
  */
 public class IntersectionExpression extends MultiExpression
 {
-    public IntersectionExpression(Expression... expressionsToUnion)
+    public IntersectionExpression(List<Expression> multiExpression)
     {
-        super(expressionsToUnion);
+        super(multiExpression);
     }
 
     /**
